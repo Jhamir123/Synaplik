@@ -1,0 +1,124 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    padding-top: 120px; /* Añadir espacio suficiente para que el encabezado no cubra el contenido */
+}
+
+/* Contenedor de la página */
+.benefits-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Fondo para la página de Beneficios */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/2.webp');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: moveBackground 15s infinite linear;
+}
+
+/* Animación de movimiento del fondo */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Encabezado de Beneficios */
+.benefits-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky; /* Fija el encabezado al hacer scroll */
+  top: 0; /* Asegura que esté en la parte superior */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para contraste */
+  padding: 20px 0;
+  text-align: center;
+  z-index: 10; /* Asegura que esté encima del contenido */
+  margin-top: -380px; /* Eliminar margen negativo */
+}
+
+/* Ajustamos el tamaño de la fuente para asegurar la visibilidad */
+.benefits-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.benefits-header p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Estilos para las tarjetas de beneficios */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px; /* Ajusta este margen para separar el contenido del encabezado */
+}
+
+/* Estilo de cada tarjeta de beneficio */
+.benefit-card {
+    background-color: #fff;
+    padding: 10px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 5px solid #8a2be2;
+}
+
+.benefit-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Estilo de las imágenes */
+.benefit-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Espacio entre la imagen y el título */
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Llamado a la acción */
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}

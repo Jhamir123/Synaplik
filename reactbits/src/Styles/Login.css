@@ -1,0 +1,121 @@
+/* Estilo general de la aplicación */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Estilo para la página de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #8a2be2, #6a0dad); /* Fondo degradado violeta */
+}
+
+/* Estilo para el formulario de login */
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Título del formulario */
+.login-form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Subtítulo debajo del título */
+.login-form p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Estilo de los campos de entrada */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.input-group input:focus {
+  border-color: #8a2be2; /* Resaltar el borde en color violeta */
+  outline: none;
+}
+
+/* Estilo del botón de "Iniciar sesión" */
+.submit-btn {
+  background-color: #8a2be2; /* Botón violeta */
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #6a0dad; /* Violeta más oscuro al pasar el ratón */
+}
+
+/* Estilo para los mensajes de error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el mensaje al costado del formulario */
+.login-message {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.login-message h3 {
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+}
+
+/* Asegurarse que el mensaje y formulario estén centrados */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+

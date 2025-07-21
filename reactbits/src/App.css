@@ -1,0 +1,134 @@
+/* Fondo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Contenedor de la página */
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Imagen de fondo en movimiento */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/Animacion.gif'); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: moveBackground 15s infinite linear;
+}
+
+
+/* Estilos del encabezado */
+.header {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  align-items: center;
+  padding: 10px 20px; /* Reduce el padding superior para moverlo más arriba */
+  position: fixed; /* Fija el encabezado en la parte superior */
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para contraste */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Alinea el logo a la izquierda */
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav ul {
+  font-family: 'Arial', Helvetica, sans-serif;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px;
+  font-size: 20px;
+  font-family: 'Arial', Helvetica, sans-serif;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+
+/* Contenido principal */
+.main-content {
+  padding-top: 120px; /* Ajusta el valor según el tamaño del encabezado */
+  text-align: center;
+  z-index: 5;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  color: white;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.login-btn {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.register-btn{
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.true-focus-container {
+  display: flex;
+  justify-content: center;  /* Centrado horizontal */
+  align-items: center;      /* Centrado vertical */
+  height: 70vh;            /* Asegura que ocupe toda la altura de la ventana */
+}
+.imagen-bajo-texto {
+  width: 100%;
+  max-width: 400px; /* Puedes ajustar el tamaño máximo */
+  margin-top: 200px; /* Ajusta el espacio entre el texto y la imagen */
+  display: block;
+  margin-left: 30px;
+  margin-right: 100px;
+}
